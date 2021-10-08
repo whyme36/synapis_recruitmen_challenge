@@ -7,7 +7,7 @@ def Unsigned_integer_to_signed_integer(intiger):
     return intiger+2**31
 
 #function check digit if it is 32-bits int it return it back, otherwise return 0
-def is_Unsigned_int32(intiger):
+def is_Signed_int32(intiger):
     if not(Unsigned_integer_to_signed_integer(intiger) >> 32):
         return intiger
     else:
@@ -18,7 +18,7 @@ def is_Unsigned_int32(intiger):
 #else it just reverse
 #at the end return int value
 def reverse_digit_32_bit(val):
-    x = str(is_Unsigned_int32(val))
+    x = str(is_Signed_int32(val))
     if x[0] == '-':
         a = x[::-1]
         rev=x[0]+a[:-1]
