@@ -3,12 +3,12 @@
 # signed is from <-2147483648;2147483647>
 
 # function increase number by 2147483648, so if we give -2147483648 it's equal to 0
-def Unsigned_integer_to_signed_integer(intiger):
+def signed_integer_to_unsigned_integer(intiger):
     return intiger+2**31
 
 #function check digit if it is 32-bits int it return it back, otherwise return 0
-def is_Signed_int32(intiger):
-    if not(Unsigned_integer_to_signed_integer(intiger) >> 32):
+def is_Unsigned_int32(intiger):
+    if not(signed_integer_to_unsigned_integer(intiger) >> 32):
         return intiger
     else:
         return 0
@@ -18,7 +18,7 @@ def is_Signed_int32(intiger):
 #else it just reverse
 #at the end return int value
 def reverse_digit_32_bit(val):
-    x = str(is_Signed_int32(val))
+    x = str(is_Unsigned_int32(val))
     if x[0] == '-':
         a = x[::-1]
         rev=x[0]+a[:-1]

@@ -32,6 +32,7 @@ def letter_combination(numbers):
           path=''
           combination(numbers,path,array_of_sign)
           return array_of_sign
+if __name__ == "__main__":
+    val = input()
+    print(letter_combination(val))
 
-digits=input()
-print(letter_combination(digits))
