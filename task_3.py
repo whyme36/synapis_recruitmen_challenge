@@ -45,10 +45,10 @@ def add_space_from_left(String,maximum_width):
 def justify_text(splited_text,maximum_width,table_of_justify):
     creating_tuples_of_paragraph(splited_text, maximum_width,table_of_justify)
     jtable_of_justify = table_of_justify[::-1]
-    print('[')
+    output=[]
     for i in jtable_of_justify:
-        print(f'\t"{add_space_from_left(i, maximum_width)}"')
-    print(']')
+        output.append( add_space_from_left(i, maximum_width))
+    print(output)
 
 if __name__ == "__main__":
     text = input() #"Hey there mate, it’s nice to finally meet you"
