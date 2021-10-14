@@ -6,7 +6,7 @@ In this repository, it makes 3 tasks received for recruitment.
 
 task required returning 32-bit intiger (signed) in inverted form, the code to invert the given number can be found in the file task_1.py
 
-*Input*: -32
+*Input*: -324
 
 *Output*: -423
 ## The second 
