@@ -25,7 +25,7 @@ def reverse_digit_32_bit(val):
     else:
         rev=x[::-1]
 
-    return print(int(rev))
+    return int(rev)
 
 if __name__ == "__main__":
     val = int(input())
